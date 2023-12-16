@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      table {
+        border-collapse: collapse;
+      }
+      th,
+      td {
+        border: 1px solid black;
+        padding: 10px;
+      }
+      form {
+        display: flex;
+        justify-content: center;
+        margin-top: 50px;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <table>
+        <tr>
+          <th>Control Type</th>
+          <th>Data</th>
+          <th>Control</th>
+        </tr>
+        <tr>
+          <td>Text Box</td>
+          <td><label for="name">Name:</label></td>
+          <td>
+            <input type="text" id="name" name="name" placeholder="Enter name" />
+          </td>
+        </tr>
+        <tr>
+          <td>Password</td>
+          <td><label for="pwd">Password:</label></td>
+          <td>
+            <input type="password" id="pwd" name="pwd" />
+          </td>
+        </tr>
+        <tr>
+          <td>Text area</td>
+          <td><label for="adress">Adress:</label></td>
+          <td>
+            <textarea
+              name="adress"
+              id="adress"
+              rows="4"
+              placeholder="Enter adress"
+              style="resize: none"
+            ></textarea>
+          </td>
+        </tr>
+        <tr>
+          <td>Drop down list</td>
+          <td><label for="area">Area:</label></td>
+          <td>
+            <select name="area" id="area">
+              <option value="center">Center</option>
+              <option value="top">Top</option>
+              <option value="bottom">Bottom</option>
+            </select>
+          </td>
+        </tr>
+        <tr>
+          <td>Check box</td>
+          <td><label for="hobbies">Hobbies:</label></td>
+          <td>
+            <input type="checkbox" name="hobbie" value="sport" />
+            <label for="sport"> Sport</label><br />
+            <input type="checkbox" name="hobbie" value="reading" />
+            <label for="reading"> Reading</label><br />
+            <input type="checkbox" name="hobbie" value="TV" />
+            <label for="TV"> T.V</label><br />
+            <input type="checkbox" name="hobbie" value="internet" />
+            <label for="internet"> Internet</label>
+          </td>
+        </tr>
+        <tr>
+          <td>Radio Buttons</td>
+          <td><label for="gender">Gender:</label></td>
+          <td>
+            <fieldset>
+              <legend>Gender Selection</legend>
+              <div style="padding: 8px">
+                <input type="radio" name="gender" value="Male" checked />
+                <label for="gender">Male</label><br />
+                <input type="radio" id="css" name="gender" value="female" />
+                <label for="gender">Female</label>
+              </div>
+            </fieldset>
+          </td>
+        </tr>
+        <tr>
+          <td>File upload</td>
+          <td><label for="myFile">Your image:</label></td>
+          <td>
+            <input type="file" id="myfile" name="myfile" />
+          </td>
+        </tr>
+        <tr>
+          <td>Buttons</td>
+          <td><label for="buttons">Actions:</label></td>
+          <td>
+            <input style="padding: 5px 10px" type="submit" value="Submit" />
+            <input style="padding: 5px 10px; margin-left: 10px" type="reset" />
+            <button style="padding: 5px 10px; margin-left: 10px" type="button">
+              Button
+            </button>
+          </td>
+        </tr>
+      </table>
+    </form>
+  </body>
+</html>
